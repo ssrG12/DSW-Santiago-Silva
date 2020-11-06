@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Conceptos</title>
+    <meta charset="UTF-8">
+    <style>
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #005883;
+        }
+
+        li.menu {
+            float: left;
+        }
+
+        li a.menu {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #F0B429;
+        }
+
+        p.inline {
+            display: inline;
+            color: #50B748
+        }
+
+        p.block {
+            display: block;
+            color: #50B748
+        }
+
+        p.inlineBlock {
+            display: inline-block;
+            color: #50B748
+        }
+
+        h3 {
+            color: #A54686;
+        }
+
+        img {
+            width: 502px;
+            height: 209px;
+        }
+
+        div.img {
+            text-align: center;
+        }
+
+        aside {
+            width: 10%;
+            padding-left: 30px;
+            margin-left: 30px;
+            float: right;
+            text-align: center;
+            position: sticky;
+            right: 0;
+        }
+
+        img.twitter {
+            width: 100px;
+            height: 100px;
+            margin-bottom: -20px;
+        }
+
+        a.twit {
+            margin-bottom: 30px;
+        }
+
+        div.sticky {
+            position: sticky;
+            top: 0;
+        }
+
+        h1 {
+            color: #43C7F4;
+        }
+
+        h3 {
+            color: #A54686;
+        }
+
+        h2 {
+            color: #005883;
+        }
+
+        body {
+            background-color: #F47920;
+        }
+
+        img.unad {
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li class="menu"><a class="menu" href="./planing.html">Inicio</a></li>
+        <li class="menu"><a class="menu" href="./concepts.html">Conceptos</a></li>
+        <li class="menu"><a class="menu" href="./materials.html">Recursos</a></li>
+        <li class="menu"><a class="menu" href="./evaluation.html">Autoevaluación</a></li>
+        <li class="menu"><a class="menu" href="./author.html">Autor</a></li>
+        <li style="float:right"><img src="./images/logoUNAD.png" class="unad"></li>
+    </ul>
+    <div class="sticky">
+        <aside>
+            <img src="./images/twitter.png" class="twitter">
+            <br />
+            <a href="https://twitter.com/UniversidadUNAD" target="blanck" class="twit">
+                Twitter UNAD
+            </a>
+        </aside>
+    </div>
+    <h1>
+        Conceptos
+    </h1>
+    <h2>¿Para qué sirve el display en CSS?</h3>
+        <p>
+            Es muy importante esta propiedad, ya que su función principal es determinar de que forma se va a presentar
+            un elemento
+            en la pantalla. Para casos específicos necesitaremos elementos en ciertas posiciones, y esta propiedad nos
+            permite hacerlo.
+            A continuación te explicaremos cuáles son los 3 valores de esta propiedad más usados, y son los siguientes:
+        </p>
+        <ul>
+            <li>Inline</li>
+            <li>Block</li>
+            <li>Inline-block</li>
+        </ul>
+        <h3>
+            Inline:
+        </h3>
+        <p>
+            El valor inline es el valor por defecto de esta propiedad. Este valor significa que los elementos siguen su
+            flujo, no se
+            interrumpe abrubtamente, sino que sigue su curso, en este caso, verticalemente.
+        </p>
+        <h3>
+            Block:
+        </h3>
+        <p>
+            Este elemento comienza en una nueva linea, y ocupa todo el ancho de la pantalla como pueda. Como bien se
+            traduce, es un
+            bloque que se despliega por completo en la pantalla.
+        </p>
+        <h3>
+            Inline-block:
+        </h3>
+        <p>
+            Este elemento es muy práctico, ya que si necesitas mostrar una fila o columna de de elementos, o ambas
+            combinadas, este
+            valor te permite hacerlo. Toma todo el ancho de la pantalla, y por alinea cada bloque sin que sobrepase el
+            ancho de la
+            pantalla.
+        </p>
+        <br />
+        <h2>Ejemplos:</h2>
+        <h3>
+            Inline:
+        </h3>
+        <div>
+            Este es un texto de ejemplo para explicar la propiedad
+            <p class="inline">INLINE</p>
+            Como puedes ver, el texto sigue su curso, no se altera, sino que sigue en el mismo flujo de pantalla. Si
+            hacemos el
+            texto un poco mas largo, puedes darte cuenta que ese elemento no genera ningún espacio adicional.
+        </div>
+        <h3>
+            Block:
+        </h3>
+        <div>
+            Este es un texto de ejemplo para explicar la propiedad
+            <p class="block">BLOCK</p>
+            Como puedes ver, al aplicar la porpiedad BLOCK, la palabra toma ese bloque completo de la pantalla, y el
+            resto
+            de elementos continuan debajo de él. Además genera cierto espacio alrededor suyo.
+        </div>
+        <h3>
+            Inline-block:
+        </h3>
+        <div>
+            Este es un texto de ejemplo para explicar la propiedad
+            <p class="inlineBlock">INLINE-BLOCK</p>
+            Como puedes ver, todo el texto sigue su curso, pero al rededor de la palabra se forma un bloque
+            específico, con
+            espacio a los lados, pero sin tomar todo el ancho de la pantalla.
+        </div>
+        <br />
+        <h2>Imágen de apoyo:</h2>
+        <p>
+            En la siguiente imágen podrás ver más claro las diferencias entre estos 3 valores
+        </p>
+        <div class="img">
+            <img src="./images/display.png">
+            <p>
+                Tomada de
+                <a href="http://www.danielledeveloper.com/inline-vs-block-vs-inline-block-css/" target="blanck">
+                    http://www.danielledeveloper.com/inline-vs-block-vs-inline-block-css/
+                </a>
+            </p>
+        </div>
+</body>
+
+</html>
