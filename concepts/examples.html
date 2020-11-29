@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Conceptos</title>
+    <meta charset="UTF-8">
+    <style>
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #005883;
+        }
+
+        li.menu {
+            float: left;
+        }
+
+        li.menu a.menu,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li.menu a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #F0B429;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #005883;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #F0B429;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        p.inline {
+            display: inline;
+            color: #50B748
+        }
+
+        p.block {
+            display: block;
+            color: #50B748
+        }
+
+        p.inlineBlock {
+            display: inline-block;
+            color: #50B748
+        }
+
+        h3 {
+            color: #A54686;
+        }
+
+        img {
+            width: 502px;
+            height: 209px;
+        }
+
+        div.img {
+            text-align: center;
+        }
+
+        aside {
+            width: 10%;
+            padding-left: 30px;
+            margin-left: 30px;
+            float: right;
+            text-align: center;
+            position: sticky;
+            right: 0;
+        }
+
+        img.twitter {
+            width: 100px;
+            height: 100px;
+            margin-bottom: -20px;
+        }
+
+        a.twit {
+            margin-bottom: 30px;
+        }
+
+        div.sticky {
+            position: sticky;
+            top: 0;
+        }
+
+        h1 {
+            color: #43C7F4;
+        }
+
+        h3 {
+            color: #A54686;
+        }
+
+        h2 {
+            color: #005883;
+        }
+
+        body {
+            background-color: #F47920;
+        }
+
+        img.unad {
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li class="menu"><a href="../planing.html" class="menu">Inicio</a></li>
+        <li class="dropdown">
+            <a href="../concepts.html" class="dropbtn">Conceptos</a>
+            <div class="dropdown-content">
+                <a href="./explanation.html" class="menu">¿Para qué sirve?</a>
+                <a href="./examples.html" class="menu">Ejemplos</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="../materials.html" class="dropbtn">Recursos</a>
+            <div class="dropdown-content">
+                <a href="../materials/audio.html" class="menu">Audio</a>
+                <a href="../materials/video.html" class="menu">Video</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="../evaluation.html" class="dropbtn">Autoevaluación</a>
+            <div class="dropdown-content">
+                <a href="../evaluation/exam1.html" class="menu">Evaluación 1</a>
+                <a href="../evaluation/exam2.html" class="menu">Evaluación 2</a>
+                <a href="../evaluation/site.html" class="menu">Evaluación Sitio</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="../author.html" class="dropbtn">Autor</a>
+        </li>
+        <li style="float:right"><img src="../images/logoUNAD.png" class="unad"></li>
+    </ul>
+    <div class="sticky">
+        <aside>
+            <img src="../images/twitter.png" class="twitter">
+            <br />
+            <a href="https://twitter.com/UniversidadUNAD" target="blanck" class="twit">
+                Twitter UNAD
+            </a>
+        </aside>
+    </div>
+    <h2>Ejemplos:</h2>
+    <h3>
+        Inline:
+    </h3>
+    <div>
+        Este es un texto de ejemplo para explicar la propiedad
+        <p class="inline">INLINE</p>
+        Como puedes ver, el texto sigue su curso, no se altera, sino que sigue en el mismo flujo de pantalla. Si
+        hacemos el
+        texto un poco mas largo, puedes darte cuenta que ese elemento no genera ningún espacio adicional.
+    </div>
+    <h3>
+        Block:
+    </h3>
+    <div>
+        Este es un texto de ejemplo para explicar la propiedad
+        <p class="block">BLOCK</p>
+        Como puedes ver, al aplicar la porpiedad BLOCK, la palabra toma ese bloque completo de la pantalla, y el
+        resto
+        de elementos continuan debajo de él. Además genera cierto espacio alrededor suyo.
+    </div>
+    <h3>
+        Inline-block:
+    </h3>
+    <div>
+        Este es un texto de ejemplo para explicar la propiedad
+        <p class="inlineBlock">INLINE-BLOCK</p>
+        Como puedes ver, todo el texto sigue su curso, pero al rededor de la palabra se forma un bloque
+        específico, con
+        espacio a los lados, pero sin tomar todo el ancho de la pantalla.
+    </div>
+    <br />
+    <h2>Imágen de apoyo:</h2>
+    <p>
+        En la siguiente imágen podrás ver más claro las diferencias entre estos 3 valores
+    </p>
+    <div class="img">
+        <img src="../images/display.png">
+        <p>
+            Tomada de
+            <a href="http://www.danielledeveloper.com/inline-vs-block-vs-inline-block-css/" target="blanck">
+                http://www.danielledeveloper.com/inline-vs-block-vs-inline-block-css/
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>
